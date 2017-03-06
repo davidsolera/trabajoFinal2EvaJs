@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practica final segunda evaluacion</title>
+	
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<meta charset="UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="jardin.js"></script>
+<script src="limpieza.js"></script>
+<script src="menaje.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+	
+<body onload="cargarJardin()">
+			
+	<div id="cajaPrincipal">
+				
+            <div id="imgFlotante">
+                
+                
+                
+            </div>
+                
+		<div id="panelTitulo">
+		
+			<div id="titulo">
+			
+                            <p id="nombreEmpresa">PlatusPlas</p>
+						
+			</div>
+			
+			<div id="enlaces">
+			
+				<a>Abrir</a>	
+				<a>Guardar</a>	
+				<a>Enviar</a>
+                                <a onclick="calcularTotal();">Resumen</a>							
+				<a>Imprimir</a>							
+				<a>Salir</a>
+			
+			</div>
+				
+		</div>
+			
+                <div id="cliente">
+
+
+                    <p>Datos Del Cliente</p>
+
+                    <p>código 123</p>
+
+                </div>
+
+                <div id="catalogo">
+				
+					
+                    <p id="tituloCatalogo">Seleccionar catalogo</p>
+					
+                    <a onclick="cargarJardin()" class="categoria">Jardin </a> <a onclick="cargarLimpieza()" class="categoria">Limpieza</a> <a onclick="cargarMenaje()" class="categoria">Menaje</a>
+					
+            	</div>
+                <div id="ocultarOverflow">
+                    <div id="posicionTabla">
+
+                    </div>
+                </div>
+	</div>	
+				
+
+
+
+
+
+				
+		
+</body>
+	
+	
+</html>

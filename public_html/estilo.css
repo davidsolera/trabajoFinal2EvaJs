@@ -1,0 +1,151 @@
+#panelTitulo{
+position: fixed;
+z-index: 1;
+width: 100%;
+height: 120px;
+top: 0px;
+background-color: black;
+}
+
+#titulo{
+position: absolute;
+top: 3px;
+left: 50px;
+width: 200px;
+height: 100px;
+color: white;
+
+}
+
+#cabeceraTabla{
+    background-color: black;
+    color: white;
+    width: 910px;
+
+}
+
+thead tr:hover{
+    background-color: black;
+    border: none;
+    
+}
+
+tr:hover{
+    background-color:white;
+    border: solid 5px red;
+}
+
+.imagen{
+height: 100px;
+width: 10%;
+cursor:hand;
+}
+
+
+.ref{
+width: 60px;
+    
+}
+.descripcion{
+width: 600px;
+}
+.unidadesCaja{
+    width: 40px;
+    
+}
+.valUnidad{
+    width: 300px;
+
+}
+
+.cantidad{
+    width: 300px;
+    
+}
+
+tbody:nth-child(odd) {
+    background-color:#BDBDBD;
+}
+
+tbody:nth-child(even) {
+    background-color:#6E6E6E;
+}
+
+
+#enlaces{
+position: absolute;
+top: 60px;
+left: 750px;
+color: white;
+}
+
+a:hover{
+background-color: #F2F2F2;
+cursor:pointer; 
+}
+a:focus{
+background-color: #F2F2F2;
+cursor:pointer;  
+    
+    
+}
+
+a.active {
+    color:#F00;
+}
+#cliente{
+position: absolute;
+width: 150px;
+left: 130px;
+top: 110px;
+}
+
+#catalogo{
+position: absolute;
+color: green;
+top:110px;
+left: 890px;
+}
+#tituloCatalogo{
+    color:black;
+    font-weight: bold;
+    
+}
+#nombreEmpresa{
+position: relative;
+left: 150px;
+top: 20px;
+color: white;
+font-family: cursive;
+font-style: italic;
+font-size: 25pt;
+}
+
+#posicionTabla{
+position: absolute;
+top: 0px;
+width: 927px;
+height: 517px;
+border: 1px solid black;
+overflow: auto;
+
+}
+table{
+    
+ border-collapse: collapse;
+ border: 1px solid #ddd;
+ text-align:center;
+ 
+    
+}
+#ocultarOverflow{
+position: absolute;
+top: 240px;
+left: 130px;
+width: 910px;
+height: 500px;
+border: 1px solid black;
+overflow: hidden;
+
+}
+
