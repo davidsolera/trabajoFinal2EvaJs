@@ -60,7 +60,7 @@ var resultadoTotalLimpieza;
                        celdas=celdas+"<td id='descripcion"+i+"' class='descripcion'>"+arrayElementoLinea[1]+"</td>";
                        celdas=celdas+"<td id='unidadesCaja"+i+"'class='unidadesCaja'>"+arrayElementoLinea[2]+"</td>";
                        celdas=celdas+"<td id='valorUnidad"+i+"'class='valUnidad' >"+arrayElementoLinea[3]+"</td>";
-                       celdas=celdas+"<td id='cantidad"+i+"'class='cantidad'>"+"<input type='number' name='cantidad' placeholder='cantidad' value='0' onblur=calcular("+ cantidadPorCaja+","+ valorUnidad+"," +i+",this);></td>";
+                       celdas=celdas+"<td id='cantidad"+i+"'class='cantidad'>"+"<input type='number' name='cantidad' placeholder='cantidad' value='0' onmouseover=calcular("+ cantidadPorCaja+","+ valorUnidad+"," +i+",this); onmouseout=calcular("+ cantidadPorCaja+","+ valorUnidad+"," +i+",this); onblur=calcular("+ cantidadPorCaja+","+ valorUnidad+"," +i+",this);></td>";
                        celdas=celdas+"<td id='resultado' class='resultado'>"+"<input type='text' id='resultado["+i+"]' name='resultado' placeholder='resultado'  disabled>"+"</td>";
 
                        document.getElementById("numColumna"+i).innerHTML += celdas;

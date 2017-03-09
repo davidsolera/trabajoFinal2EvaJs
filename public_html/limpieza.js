@@ -58,7 +58,7 @@ function cargarLimpieza(){
                        celdas=celdas+"<td id='descripcion"+i+"' class='descripcion'>"+arrayElementoLinea[1]+"</td>";
                        celdas=celdas+"<td id='unidadesCaja"+i+"'class='unidadesCaja'>"+arrayElementoLinea[2]+"</td>";
                        celdas=celdas+"<td id='valorUnidad"+i+"'class='valUnidad' >"+arrayElementoLinea[3]+"</td>";
-                       celdas=celdas+"<td id='cantidad"+i+"'class='cantidad'>"+"<input type='number' name='cantidad' placeholder='cantidad' value='0' onblur=calcular("+ cantidadPorCaja+","+ valorUnidad+"," +i+",this);></td>";
+                       celdas=celdas+"<td id='cantidad"+i+"'class='cantidad'>"+"<input type='number' name='cantidad' placeholder='cantidad' value='0' onmouseover=calcular("+ cantidadPorCaja+","+ valorUnidad+"," +i+",this); onmouseout=calcular("+ cantidadPorCaja+","+ valorUnidad+"," +i+",this); onblur=calcular("+ cantidadPorCaja+","+ valorUnidad+"," +i+",this);></td>";
                        celdas=celdas+"<td id='resultado' class='resultado'>"+"<input type='text' id='resultado["+i+"]' name='resultado' placeholder='resultado'  disabled>"+"</td>";
 
                        document.getElementById("numColumna"+i).innerHTML += celdas;
@@ -76,9 +76,8 @@ function cargarLimpieza(){
                        var numero3 = num3.value;
                        var lin = linea;
                        var resultado = eval(numero1*numero2*numero3);
-                       resultadoCorto = resultado.toFixed(3);
-                       resultadoTotalLimpieza=(resultadoTotalLimpieza+resultado);
-
-                       document.getElementById("resultado["+lin+"]").value = resultadoCorto;
+                       resultadoCorto = resultado.toFixed(2);
+                       resultadoFinal=resultadoCorto.replace(",",".");
+                       document.getElementById("resultado["+lin+"]").value = resultadoFinal;
 
 }
